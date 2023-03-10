@@ -16,8 +16,8 @@ const Items = styled.div`
 
 export default (props) => (
   <Items>
-    <Item {...props} />
-    {ImageFilter(props.type)}
     <span>{props.date}</span>
+    {ImageFilter(props.type)}
+    <Item {...props} />
   </Items>
 );

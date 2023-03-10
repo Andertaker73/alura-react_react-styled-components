@@ -11,8 +11,8 @@ const BtnCabecalho = styled.a`
   font-weight: 600;
   border: 2px solid white;
 
-  background: ${(props) => (props.primary ? "white" : "corPrimaria")};
-  color: ${(props) => (props.primary ? "corPrimaria" : "white")};
+  background: ${(props) => (props.primary ? "white" : corPrimaria)};
+  color: ${(props) => (props.primary ? corPrimaria : "white")};
 `;
 
 const StyledHeader = styled.nav`
@@ -34,7 +34,7 @@ const Cabecalho = () => {
     <StyledHeader>
       <Logo src={bank_logo} alt="Logo Smart Bank" />
       <div>
-        <BtnCabecalho primary   href="https://google.com">
+        <BtnCabecalho primary href="https://google.com">
           Ajuda
         </BtnCabecalho>
         <BtnCabecalho href="https://google.com">Sair</BtnCabecalho>
